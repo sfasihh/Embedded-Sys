@@ -1,0 +1,140 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Samiya Windows, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DARMP1.DLL V1.27.0.0
+Target DLL:      UL2CM3.DLL V1.163.4.0
+Dialog DLL:      TARMP1.DLL V1.26.0.0
+ 
+<h2>Project:</h2>
+C:\Users\samiy\Desktop\COE 718\Proj2\multitasking.uvprojx
+Project File Date:  12/08/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling Thread.c...
+Thread.c(80): warning:  #1-D: last line of file ends without a newline
+  }
+Thread.c: 1 warning, 0 errors
+linking...
+Program Size: Code=7940 RO-data=524 RW-data=17556 ZI-data=516  
+".\Objects\multitasking.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: RTOS2 Version: 2.1.3
+   * Component: CORE Version: 5.4.0
+   * Component: Keil RTX5 Variant: Library Version: 5.5.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.ARM_Compiler.1.6.3.pack
+                Keil.ARM_Compiler.1.6.3
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: STDIN Variant: Breakpoint Version: 1.2.0
+   * Component: STDOUT Variant: ITM Version: 1.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.LPC1700_DFP.2.6.0.pack
+                Keil.LPC1700_DFP.2.6.0
+                NXP LPC1700 Series Device Support, Drivers and Examples for MCB1700 and LPC1788-32
+   * Component: Joystick Version: 1.0.0
+   * Component: LED Version: 1.0.0
+   * Component: GPIO Version: 1.1.0
+   * Component: PIN Version: 1.0.0
+   * Component: Startup Version: 1.0.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.MDK-Middleware.7.11.1.pack
+                Keil.MDK-Middleware.7.11.1
+                Middleware for Keil MDK-Professional and MDK-Plus
+   * Component: Joystick Version: 1.0.0
+   * Component: LED Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\CMSIS
+  .\RTE\Device\LPC1768
+  .\RTE\_Target_1
+  C:\Users\samiy\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\samiy\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\Include
+  C:\Users\samiy\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Include
+  C:\Users\samiy\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include
+  C:\Users\samiy\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\RTE_Driver
+  C:\Users\samiy\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.11.1\Board
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Board Support:Joystick:1.0.0 (API)
+      Include file:  Board\Board_Joystick.h
+
+   * Component: ::Board Support:LED:1.0.0 (API)
+      Include file:  Board\Board_LED.h
+
+   * Component: ::CMSIS:RTOS2:2.1.3 (API)
+      Include file:  CMSIS\RTOS2\Include\cmsis_os2.h
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.5.2
+      Source file:   CMSIS\RTOS2\RTX\Config\RTX_Config.c
+      Include file:  CMSIS\RTOS2\RTX\Include\rtx_os.h
+      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
+      Source file:   CMSIS\RTOS2\RTX\Template\MsgQueue.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
+      Source file:   CMSIS\RTOS2\RTX\Template\main.c
+      Include file:  CMSIS\RTOS2\RTX\Config\RTX_Config.h
+      Source file:   CMSIS\RTOS2\RTX\Template\Events.c
+      Source file:   CMSIS\RTOS2\RTX\Template\MemPool.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
+      Library file:  CMSIS\RTOS2\RTX\Library\ARM\RTX_CM3.lib
+      Source file:   CMSIS\RTOS2\RTX\Template\Timer.c
+      Source file:   CMSIS\RTOS2\RTX\Template\svc_user.c
+      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDIN:Breakpoint:1.2.0
+      Source file:   Source\retarget_io.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDOUT:ITM:1.2.0
+      Source file:   Source\retarget_io.c
+
+   * Component: Keil.MCB1700::Board Support:Joystick:1.0.0
+      Source file:   Boards\Keil\MCB1700\Common\Joystick_MCB1700.c
+
+   * Component: Keil.MCB1700::Board Support:LED:1.0.0
+      Source file:   Boards\Keil\MCB1700\Common\LED_MCB1700.c
+
+   * Component: Keil::Device:GPIO:1.1.0
+      Source file:   RTE_Driver\GPIO_LPC17xx.c
+      Include file:  RTE_Driver\GPIO_LPC17xx.h
+
+   * Component: Keil::Device:PIN:1.0.0
+      Source file:   RTE_Driver\PIN_LPC17xx.c
+      Include file:  RTE_Driver\PIN_LPC17xx.h
+
+   * Component: Keil::Device:Startup:1.0.0
+      Include file:  Device\Include\LPC17xx.h
+      Source file:   Device\Source\ARM\startup_LPC17xx.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\system_LPC17xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

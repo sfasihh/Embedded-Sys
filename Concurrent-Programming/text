@@ -1,0 +1,56 @@
+#include "cmsis_os2.h"                          // CMSIS RTOS header file
+#include "Board_LED.h"
+#include "Board_Joystick.h"
+ 
+/*----------------------------------------------------------------------------
+ *      Thread 1 'Thread_Name': Sample thread
+ *---------------------------------------------------------------------------*/
+int a = 500000;
+int b = 500000;
+int c = 50000;
+osThreadId_t tid1_Thread;                        // thread id
+void Thread1 (void *argument);
+
+__NO_RETURN void worker1 (void *argument) {
+  LED_On(1);
+	
+}
+
+__NO_RETURN void worker2 (void *argument) {
+  for(;;){ // work a lot on data[] 
+	b = b -2 ;
+  //osDelay(1000U);
+		if(b==0){
+  osThreadExit();
+	}
+	}
+	
+	
+}
+
+int Init_Thread (void) {
+
+  tid1_Thread = osThreadNew(Thread1, NULL, NULL);
+  return(0);
+}
+ 
+void Thread1 (void *argument) {
+	LED_Initialize();
+	osThreadAttr_t worker_attr;
+  osThreadId_t worker_ids[2];
+	uint8_t data[2][10];
+  memset(&worker_attr, 0, sizeof(worker_attr));
+  worker_attr.attr_bits = osThreadJoinable;
+
+	
+	worker_ids[0] = osThreadNew(worker1, &data[0][0], &worker_attr);
+  worker_ids[1] = osThreadNew(worker2, &data[1][0], &worker_attr);
+	LED_On(2);
+	osThreadJoin(worker_ids[0]);
+  osThreadJoin(worker_ids[1]);
+	
+	osThreadExit();
+}
+
+
+

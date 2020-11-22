@@ -1,0 +1,9 @@
+.\objects\thr.o: thr.c
+.\objects\thr.o: C:\Users\samiy\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\thr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\thr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\thr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\thr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\thr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\thr.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\objects\thr.o: C:\Users\samiy\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.11.1\Board\Board_LED.h
